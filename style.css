@@ -1,7 +1,16 @@
 body{
     background-color: hsl(0, 0%, 100%);
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
     font-size: 16px;
     font-family: 'League Spartan';
+}
+
+.wrapper{
+    display: grid;
+    align-items: right;
+    justify-items: center;
 }
 
 span{
@@ -20,10 +29,10 @@ p{
 
 .container {
     height: 600px;
-    width: 1000px;
+    width: 1040px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 100px ;
+    grid-template-rows: 100px;
     grid-template-areas:
     "a a a b b b"
     "a a a b b b"
@@ -31,6 +40,7 @@ p{
     "c c d d e e";
     row-gap: 20px;
     column-gap: 20px;
+
 }
 
 .item1 {
@@ -66,7 +76,7 @@ p{
 
 .item{
     margin-top: 30px;
-    height: 252px;
+    height: 230px;
     width: 333px;
     background-color: hsl(300, 43%, 22%);
     border-radius: 5px;
@@ -76,6 +86,7 @@ p{
     line-height: 22px;
     font-size: 15px;
     color: white;
+    margin-top: 24px;
 }
 
 .item3 {
@@ -90,11 +101,16 @@ p{
     height: 3rem;
     border-radius: 50px;
 }
+.name-wrapper{
+    margin-left: 68px;
+}
 .name-text{
-    margin-left: 70px;
+    padding-top: 8px;
+    margin-bottom: 5px;
 }
 .verified-buyer{
     color: hsl(333, 80%, 67%);
+    margin-top: 0;
 }
 .card{
     color: white;
